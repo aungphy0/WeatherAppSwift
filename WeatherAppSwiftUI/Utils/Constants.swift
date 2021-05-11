@@ -10,7 +10,7 @@ import Foundation
 struct Constants {
     struct Urls {
         static func weatherByCity(city: String) -> URL? {
-            return URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city.escaped())&appid=6b2501989302c0723c7c3a389c83dc3c")
+            return URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city.escaped())&appid={API-Key}")
         }
         
         static func weatherUrlAsStringByIcon(icon: String) -> String {
